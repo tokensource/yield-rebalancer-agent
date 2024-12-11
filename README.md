@@ -86,3 +86,18 @@ The core of the project is a Solidity smart contract named `YieldRebalancer`, de
    ```bash
    git clone https://github.com/tokensource/yield-rebalancer-agent
    cd yield-rebalancer-agent
+
+
+### Steps to Set Up and Deploy
+
+1. **Fill `.env`**: Fill in the `.env` file with your actual values.
+
+2. **Install Dependencies**: Run `npm install` or `yarn install` to install the required packages.
+
+3. **Compile**: Compile the smart contracts using the command `npx hardhat compile`.
+
+4. **Deploy**: Run the `deploy.js` script to deploy to a test network like Goerli or Sepolia:  
+   - `npx hardhat run scripts/deploy.js --network goerli`  
+   - `npx hardhat run scripts/deploy.js --network sepolia`
+
+5. **Test**: Run the tests using `npx hardhat test`.
